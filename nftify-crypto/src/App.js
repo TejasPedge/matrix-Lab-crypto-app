@@ -3,7 +3,7 @@ import './App.css';
 import { Box, Image } from '@chakra-ui/react';
 import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
-import AllRoutes from './Routes/AllRoutes';
+import Home from './Pages/Home';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
     >
       <Box background={'rgba(0, 0, 0, 0.749)'} height={'100vh'}>
         <Sidebar />
-        <AllRoutes />
+        <Home />
       </Box>
       <Footer />
     </Box>
