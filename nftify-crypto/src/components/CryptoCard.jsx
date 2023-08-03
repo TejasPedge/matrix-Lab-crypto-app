@@ -1,11 +1,12 @@
 import { Box, Circle, GridItem, Text } from '@chakra-ui/react'
 import React from 'react'
+import { Divider } from '@chakra-ui/react'
 
 const CryptoCard = ({pairCreatedAt, symbol, dexId, pairAddress, baseToken, quoteToken, priceNative, priceUsd}) => {
 
   return (
     <>
-        <GridItem height = {'188px'} background = {'#390554'} borderRadius = {'10px'} position = {'relative'} boxSizing = 'border-box' p = '23px 0 33px 32px'>
+        <GridItem height = {'188px'} background = {'#390554'} borderRadius = {'10px'} position = {'relative'} boxSizing = 'border-box' p = {{base  : "20px 0 36px 57px", '639px' : "23px 0 33px 32px"}}>
             <Text mb = {'12px'} fontSize = {'16px'} fontWeight = {600}>Basic Info</Text>
 
             <Box display = 'flex'>
@@ -33,7 +34,7 @@ const CryptoCard = ({pairCreatedAt, symbol, dexId, pairAddress, baseToken, quote
 
         {/* ------------ Base Token ---------------- */}
 
-        <GridItem height = {'188px'} background = {'#390554'} borderRadius = {'10px'} position = {'relative'} boxSizing = 'border-box' p = '23px 0 33px 32px'>
+        <GridItem height = {'188px'} background = {'#390554'} borderRadius = {'10px'} position = {'relative'} boxSizing = 'border-box' p = {{base  : "20px 0 36px 57px", '639px' : "23px 0 33px 32px"}}>
             <Text mb = {'15px'} fontSize = {'16px'} fontWeight = {600}>Base Token</Text>
             <Box display = 'flex'>
                     <Box color = '#f5f5f5' display = {'flex'} flexDirection = {'column'} gap = {'8px'}>
@@ -59,7 +60,7 @@ const CryptoCard = ({pairCreatedAt, symbol, dexId, pairAddress, baseToken, quote
     {/* ----------------- Quote Token ------------------- */}
 
     
-    <GridItem height = {'188px'} background = {'#390554'} borderRadius = {'10px'} position = {'relative'} boxSizing = 'border-box' p = '23px 0 33px 32px'>
+    <GridItem height = {'188px'} background = {'#390554'} borderRadius = {'10px'} position = {'relative'} boxSizing = 'border-box' p = {{base  : "20px 0 36px 57px", '639px' : "23px 0 33px 32px"}}>
             <Text mb = {'15px'} fontSize = {'16px'} fontWeight = {600}>Quote Token</Text>
             <Box display = 'flex'>
                     <Box color = '#f5f5f5' display = {'flex'} flexDirection = {'column'} gap = {'8px'}>
@@ -86,7 +87,7 @@ const CryptoCard = ({pairCreatedAt, symbol, dexId, pairAddress, baseToken, quote
     {/* ------------------- Price ----------------------- */}
 
 
-    <GridItem height = {'188px'} background = {'#390554'} borderRadius = {'10px'} position = {'relative'} boxSizing = 'border-box' p = '23px 0 33px 32px'>
+    <GridItem height = {'188px'} background = {'#390554'} borderRadius = {'10px'} position = {'relative'} boxSizing = 'border-box' p = {{base  : "20px 0 36px 57px", '639px' : "23px 0 33px 32px"}}>
         <Text mb = {'15px'} fontSize = {'16px'} fontWeight = {600}>Price</Text>
         <Box display = 'flex'>
             <Box color = '#f5f5f5' display = {'flex'} flexDirection = {'column'} gap = {'8px'}>
@@ -106,6 +107,8 @@ const CryptoCard = ({pairCreatedAt, symbol, dexId, pairAddress, baseToken, quote
             </svg>
         </Circle>
     </GridItem>
+
+    <Divider display = {{base : "block", "639px" : 'none'}}></Divider>
     </>
   )
 }

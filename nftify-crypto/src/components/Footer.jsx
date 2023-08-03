@@ -9,6 +9,7 @@ const Footer = () => {
         background = "#F30050"
         position = {"fixed"}
         bottom = "0"
+        zIndex = {11}
     >
 
     </Box>
